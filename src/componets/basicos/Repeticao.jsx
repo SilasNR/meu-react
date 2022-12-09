@@ -1,13 +1,13 @@
 import React from 'react'
 
-import produtos from "../Data/Produtos.js"
+import produtos from "../../Data/Produtos"
 
 export default props => {
 
   function pegarProdutos() {
       return produtos.map(prod => {
         return <li key={prod.id}>
-          {prod.id} - {prod.nome} -> R$ {prod.preco}
+          {prod.id} - {prod.nome}` {'-> R$ '}`{prod.preco}
         </li>
       })
   }
